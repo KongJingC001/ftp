@@ -1,0 +1,80 @@
+#system-name {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+#file-table {
+
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  padding: 0;
+
+  th {
+    font-size: 22px;
+  }
+
+  tr {
+    height: 50px;
+
+    td {
+      width: 30%;
+    }
+  }
+
+  #table-head {
+    border-bottom: 3px solid black;
+  }
+
+}
+
+.file,
+.directory {
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: blue;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+
+.upload-button {
+
+
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 10px;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    font-size: 100px;
+  }
+
+  div {
+    font-size: 25px;
+    padding: 10px 15px;
+    border-radius: 50px;
+  }
+
+}
+
+
+.hover {
+  background-color: #7fff00;
+  color: gray;
+}
+
+.unhover {
+  background: #00ff7f;
+  color: white;
+}
