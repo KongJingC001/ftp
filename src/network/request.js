@@ -8,7 +8,7 @@ import axios from "axios";
 export function request(config) {
   //创建自己的axios实例
   const instance = axios.create({
-    baseURL: 'localhost:8080',
+    baseURL: './',
     timeout: 5000
   })
   //使用拦截器
@@ -23,6 +23,7 @@ export function request(config) {
       // statement;
       // ...
       //返回config
+      console.log('拦截到一个请求，直接放行');
       return config
     },
     err => {
